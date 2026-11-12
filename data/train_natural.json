@@ -1,0 +1,1321 @@
+[
+ {
+  "board": "checkout-sprint",
+  "title": "Checkout redesign sprint planning",
+  "notes": [
+   {
+    "text": "guest checkout asks for a password at the very end",
+    "type": "problem",
+    "theme": "payment",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "apple pay button is below the fold on mobile",
+    "type": "problem",
+    "theme": "payment",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "one-tap reorder for returning customers",
+    "type": "idea",
+    "theme": "payment",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "save card details by default with an easy opt out",
+    "type": "idea",
+    "theme": "payment",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "PayPal stays, we're removing the gift card field from step 1",
+    "type": "decision",
+    "theme": "payment",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "Sofia to move the apple pay button above the fold by Thursday",
+    "type": "action",
+    "theme": "payment",
+    "owner": "sofia",
+    "due": "thursday"
+   },
+   {
+    "text": "how many people abandon at the payment step?",
+    "type": "question",
+    "theme": "payment",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "pull abandonment numbers per checkout step",
+    "type": "action",
+    "theme": "payment",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "shipping cost only shows up on the last screen",
+    "type": "problem",
+    "theme": "shipping",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "estimate shipping on the cart page using zip code",
+    "type": "idea",
+    "theme": "shipping",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "can the warehouse API return delivery dates?",
+    "type": "question",
+    "theme": "shipping",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "nate owns the shipping estimate spike next sprint",
+    "type": "action",
+    "theme": "shipping",
+    "owner": "nate",
+    "due": "next sprint"
+   },
+   {
+    "text": "free shipping threshold stays at $50",
+    "type": "decision",
+    "theme": "shipping",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "international addresses fail validation",
+    "type": "problem",
+    "theme": "shipping",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "rewrite error messages so they say how to fix the problem",
+    "type": "idea",
+    "theme": "copy",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "I'll draft new error copy and share by friday",
+    "type": "action",
+    "theme": "copy",
+    "owner": "author",
+    "due": "friday"
+   },
+   {
+    "text": "\"Invalid input\" tells people nothing",
+    "type": "problem",
+    "theme": "copy",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "do we need legal review for the returns text?",
+    "type": "question",
+    "theme": "copy",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "we use plain language, no jargon, in every checkout message",
+    "type": "decision",
+    "theme": "copy",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "show a progress bar with 3 steps",
+    "type": "idea",
+    "theme": "copy",
+    "owner": null,
+    "due": null
+   }
+  ]
+ },
+ {
+  "board": "campaign-brainstorm",
+  "title": "Spring campaign brainstorm",
+  "notes": [
+   {
+    "text": "partner with 3 podcasts our users already listen to",
+    "type": "idea",
+    "theme": "channels",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "short how-to videos for linkedin",
+    "type": "idea",
+    "theme": "channels",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "paid social CPC went up 35% this quarter",
+    "type": "problem",
+    "theme": "channels",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "which channel brought our best customers last year?",
+    "type": "question",
+    "theme": "channels",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "Amara: channel attribution report, Monday",
+    "type": "action",
+    "theme": "channels",
+    "owner": "amara",
+    "due": "monday"
+   },
+   {
+    "text": "we're cutting display ads entirely",
+    "type": "decision",
+    "theme": "channels",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "lead with time saved, not features",
+    "type": "idea",
+    "theme": "message",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "our homepage headline means nothing to new visitors",
+    "type": "problem",
+    "theme": "message",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "pete to test 3 headline variants next week",
+    "type": "action",
+    "theme": "message",
+    "owner": "pete",
+    "due": "next week"
+   },
+   {
+    "text": "who is the primary persona for this campaign?",
+    "type": "question",
+    "theme": "message",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "tagline is \"Plan less, ship more\"",
+    "type": "decision",
+    "theme": "message",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "customer quote on every ad",
+    "type": "idea",
+    "theme": "message",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "i'll get the final budget number from finance",
+    "type": "action",
+    "theme": "budget",
+    "owner": "author",
+    "due": null
+   },
+   {
+    "text": "is the budget split by quarter or annual?",
+    "type": "question",
+    "theme": "budget",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "we overspent on events in Q4",
+    "type": "problem",
+    "theme": "budget",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "60% of budget goes to content and video",
+    "type": "decision",
+    "theme": "budget",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "hold back 10% for whatever works best in month one",
+    "type": "idea",
+    "theme": "budget",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "set up a weekly spend tracker",
+    "type": "action",
+    "theme": "budget",
+    "owner": null,
+    "due": null
+   }
+  ]
+ },
+ {
+  "board": "advisory-board",
+  "title": "Customer advisory board notes",
+  "notes": [
+   {
+    "text": "enterprise customers need Salesforce sync both ways",
+    "type": "problem",
+    "theme": "integrations",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "zapier templates for the top 10 workflows",
+    "type": "idea",
+    "theme": "integrations",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "which integrations do lost deals ask for?",
+    "type": "question",
+    "theme": "integrations",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "Ken compiles the integration requests from lost deals by end of month",
+    "type": "action",
+    "theme": "integrations",
+    "owner": "ken",
+    "due": "end of month"
+   },
+   {
+    "text": "Salesforce two-way sync is the top Q3 bet",
+    "type": "decision",
+    "theme": "integrations",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "admins can't see who has access to what",
+    "type": "problem",
+    "theme": "admin",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "a single permissions page with filters",
+    "type": "idea",
+    "theme": "admin",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "@lia share the permissions mockups with the board - 11/15",
+    "type": "action",
+    "theme": "admin",
+    "owner": "lia",
+    "due": "11/15"
+   },
+   {
+    "text": "do admins want SCIM or is SSO enough?",
+    "type": "question",
+    "theme": "admin",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "audit log export ships before any new admin features",
+    "type": "decision",
+    "theme": "admin",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "exec reports take hours to build by hand",
+    "type": "problem",
+    "theme": "reporting",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "scheduled PDF report emailed every Monday",
+    "type": "idea",
+    "theme": "reporting",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "what metrics do execs actually look at?",
+    "type": "question",
+    "theme": "reporting",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "I will interview 5 execs about their reports next week",
+    "type": "action",
+    "theme": "reporting",
+    "owner": "author",
+    "due": "next week"
+   },
+   {
+    "text": "no custom report builder this year",
+    "type": "decision",
+    "theme": "reporting",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "charts don't match the numbers in billing",
+    "type": "problem",
+    "theme": "reporting",
+    "owner": null,
+    "due": null
+   }
+  ]
+ },
+ {
+  "board": "remote-retro",
+  "title": "Remote work retro",
+  "notes": [
+   {
+    "text": "too many meetings on Tuesdays",
+    "type": "problem",
+    "theme": "meetings",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "no-meeting wednesdays",
+    "type": "idea",
+    "theme": "meetings",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "standups are async in slack from now on",
+    "type": "decision",
+    "theme": "meetings",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "Diana sets up the async standup bot by Friday",
+    "type": "action",
+    "theme": "meetings",
+    "owner": "diana",
+    "due": "friday"
+   },
+   {
+    "text": "do we still need the weekly all-hands?",
+    "type": "question",
+    "theme": "meetings",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "people in APAC always get the 10pm slot",
+    "type": "problem",
+    "theme": "meetings",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "one shared doc hub instead of 4 wikis",
+    "type": "idea",
+    "theme": "tools",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "nobody knows which wiki is current",
+    "type": "problem",
+    "theme": "tools",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "archive the old confluence space",
+    "type": "action",
+    "theme": "tools",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "who pays for the new tool licenses?",
+    "type": "question",
+    "theme": "tools",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "Notion is the single source of truth",
+    "type": "decision",
+    "theme": "tools",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "Felix migrates the onboarding docs by Dec 1",
+    "type": "action",
+    "theme": "tools",
+    "owner": "felix",
+    "due": "dec 1"
+   },
+   {
+    "text": "new hires feel isolated the first month",
+    "type": "problem",
+    "theme": "culture",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "buddy program for every new hire",
+    "type": "idea",
+    "theme": "culture",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "virtual coffee roulette every two weeks",
+    "type": "idea",
+    "theme": "culture",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "ill pair up buddies for the next 3 hires tomorrow",
+    "type": "action",
+    "theme": "culture",
+    "owner": "author",
+    "due": "tomorrow"
+   },
+   {
+    "text": "should we fund one in-person meetup a year?",
+    "type": "question",
+    "theme": "culture",
+    "owner": null,
+    "due": null
+   }
+  ]
+ },
+ {
+  "board": "data-migration",
+  "title": "Data platform migration",
+  "notes": [
+   {
+    "text": "nightly jobs fail about twice a week",
+    "type": "problem",
+    "theme": "pipeline",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "which jobs block the morning dashboards?",
+    "type": "question",
+    "theme": "pipeline",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "yuki to add retries + alerts to the nightly jobs next sprint",
+    "type": "action",
+    "theme": "pipeline",
+    "owner": "yuki",
+    "due": "next sprint"
+   },
+   {
+    "text": "we move to the new orchestrator in phase 1",
+    "type": "decision",
+    "theme": "pipeline",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "run old and new pipelines side by side for two weeks",
+    "type": "idea",
+    "theme": "pipeline",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "revenue numbers differ between finance and product dashboards",
+    "type": "problem",
+    "theme": "quality",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "one certified metrics layer everyone reads from",
+    "type": "idea",
+    "theme": "quality",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "I'll list every revenue definition we use by fri",
+    "type": "action",
+    "theme": "quality",
+    "owner": "author",
+    "due": "friday"
+   },
+   {
+    "text": "who signs off on the official revenue definition?",
+    "type": "question",
+    "theme": "quality",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "finance owns the revenue definition",
+    "type": "decision",
+    "theme": "quality",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "analysts wait days for database access",
+    "type": "problem",
+    "theme": "access",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "self-serve access requests with manager approval",
+    "type": "idea",
+    "theme": "access",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "document the access request process",
+    "type": "action",
+    "theme": "access",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "read-only access is granted by default to analysts",
+    "type": "decision",
+    "theme": "access",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "does this pass the security review?",
+    "type": "question",
+    "theme": "access",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "Omari owns the access automation in Q2",
+    "type": "action",
+    "theme": "access",
+    "owner": "omari",
+    "due": "q2"
+   }
+  ]
+ },
+ {
+  "board": "holiday-sale",
+  "title": "Holiday sale prep",
+  "notes": [
+   {
+    "text": "site went down for 20 minutes during last year's sale",
+    "type": "problem",
+    "theme": "site",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "Bao runs a load test at 3x traffic next week",
+    "type": "action",
+    "theme": "site",
+    "owner": "bao",
+    "due": "next week"
+   },
+   {
+    "text": "is the CDN contract big enough for peak?",
+    "type": "question",
+    "theme": "site",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "code freeze starts Nov 20",
+    "type": "decision",
+    "theme": "site",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "waiting room page if traffic spikes",
+    "type": "idea",
+    "theme": "site",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "early access for loyalty members",
+    "type": "idea",
+    "theme": "deals",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "max discount is 30% this year",
+    "type": "decision",
+    "theme": "deals",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "last year's coupon codes got leaked on reddit",
+    "type": "problem",
+    "theme": "deals",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "carmen will set up single-use codes tomorrow",
+    "type": "action",
+    "theme": "deals",
+    "owner": "carmen",
+    "due": "tomorrow"
+   },
+   {
+    "text": "do we stack deals with the loyalty discount?",
+    "type": "question",
+    "theme": "deals",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "warehouse ran out of boxes on day 2",
+    "type": "problem",
+    "theme": "ops",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "order 2x packaging supplies",
+    "type": "action",
+    "theme": "ops",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "extra temp staff for the first weekend",
+    "type": "idea",
+    "theme": "ops",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "what's the cutoff date for christmas delivery?",
+    "type": "question",
+    "theme": "ops",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "customer support runs extended hours all week",
+    "type": "decision",
+    "theme": "ops",
+    "owner": null,
+    "due": null
+   }
+  ]
+ },
+ {
+  "board": "design-system",
+  "title": "Design system cleanup",
+  "notes": [
+   {
+    "text": "we have 6 different button styles in production",
+    "type": "problem",
+    "theme": "components",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "deprecate anything not used in the last 90 days",
+    "type": "idea",
+    "theme": "components",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "Ivy to audit button usage across the app by Friday",
+    "type": "action",
+    "theme": "components",
+    "owner": "ivy",
+    "due": "friday"
+   },
+   {
+    "text": "one primary, one secondary, one ghost button. that's it",
+    "type": "decision",
+    "theme": "components",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "who approves new components?",
+    "type": "question",
+    "theme": "components",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "designers don't know which figma library is current",
+    "type": "problem",
+    "theme": "docs",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "storybook page for every component with do/don't examples",
+    "type": "idea",
+    "theme": "docs",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "I'll write the contribution guide by end of month",
+    "type": "action",
+    "theme": "docs",
+    "owner": "author",
+    "due": "end of month"
+   },
+   {
+    "text": "should docs live in figma or storybook?",
+    "type": "question",
+    "theme": "docs",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "storybook is the source of truth for engineers",
+    "type": "decision",
+    "theme": "docs",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "color contrast fails on half our grey text",
+    "type": "problem",
+    "theme": "a11y",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "Ravi fixes contrast tokens - dec 15",
+    "type": "action",
+    "theme": "a11y",
+    "owner": "ravi",
+    "due": "dec 15"
+   },
+   {
+    "text": "automated accessibility check in CI",
+    "type": "idea",
+    "theme": "a11y",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "do we have a screen reader user to test with?",
+    "type": "question",
+    "theme": "a11y",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "WCAG AA is the minimum for every new screen",
+    "type": "decision",
+    "theme": "a11y",
+    "owner": null,
+    "due": null
+   }
+  ]
+ },
+ {
+  "board": "partner-brainstorm",
+  "title": "Partner integrations brainstorm",
+  "notes": [
+   {
+    "text": "public marketplace for partner apps",
+    "type": "idea",
+    "theme": "marketplace",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "revenue share for top partner apps",
+    "type": "idea",
+    "theme": "marketplace",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "how do we review partner apps for security?",
+    "type": "question",
+    "theme": "marketplace",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "partners email us PDFs instead of using the API",
+    "type": "problem",
+    "theme": "marketplace",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "Tess drafts the marketplace one-pager next week",
+    "type": "action",
+    "theme": "marketplace",
+    "owner": "tess",
+    "due": "next week"
+   },
+   {
+    "text": "marketplace launches invite-only",
+    "type": "decision",
+    "theme": "marketplace",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "rate limits are too low for bulk imports",
+    "type": "problem",
+    "theme": "api",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "webhooks for every object change",
+    "type": "idea",
+    "theme": "api",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "publish the API changelog publicly",
+    "type": "action",
+    "theme": "api",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "do we version the API by date or number?",
+    "type": "question",
+    "theme": "api",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "we're going with date-based API versions",
+    "type": "decision",
+    "theme": "api",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "I'll write the webhook RFC by monday",
+    "type": "action",
+    "theme": "api",
+    "owner": "author",
+    "due": "monday"
+   },
+   {
+    "text": "partner tickets get lost in the main support queue",
+    "type": "problem",
+    "theme": "support",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "dedicated partner slack channel",
+    "type": "idea",
+    "theme": "support",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "@gus create a partner tag in zendesk by 11/28",
+    "type": "action",
+    "theme": "support",
+    "owner": "gus",
+    "due": "11/28"
+   },
+   {
+    "text": "partner tickets get a 24h response SLA",
+    "type": "decision",
+    "theme": "support",
+    "owner": null,
+    "due": null
+   }
+  ]
+ },
+ {
+  "board": "support-retro",
+  "title": "Support team retro",
+  "notes": [
+   {
+    "text": "tickets doubled after the pricing change",
+    "type": "problem",
+    "theme": "volume",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "which question shows up the most?",
+    "type": "question",
+    "theme": "volume",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "chatbot that answers the top 20 billing questions",
+    "type": "idea",
+    "theme": "volume",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "Hal tags the last 500 tickets by topic tomorrow",
+    "type": "action",
+    "theme": "volume",
+    "owner": "hal",
+    "due": "tomorrow"
+   },
+   {
+    "text": "we hire 2 more agents for Q1",
+    "type": "decision",
+    "theme": "volume",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "agents switch between 5 tabs to answer one ticket",
+    "type": "problem",
+    "theme": "tools",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "customer context panel inside the ticket view",
+    "type": "idea",
+    "theme": "tools",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "list the 5 tabs and what data each one gives",
+    "type": "action",
+    "theme": "tools",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "can we build the panel or do we buy it?",
+    "type": "question",
+    "theme": "tools",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "buy, not build, for the context panel",
+    "type": "decision",
+    "theme": "tools",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "weekend shifts are burning people out",
+    "type": "problem",
+    "theme": "morale",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "rotate weekend shifts monthly",
+    "type": "idea",
+    "theme": "morale",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "i'll propose a new rotation next week",
+    "type": "action",
+    "theme": "morale",
+    "owner": "author",
+    "due": "next week"
+   },
+   {
+    "text": "can we offer comp days for weekend work?",
+    "type": "question",
+    "theme": "morale",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "weekend shifts become voluntary with extra pay",
+    "type": "decision",
+    "theme": "morale",
+    "owner": null,
+    "due": null
+   }
+  ]
+ },
+ {
+  "board": "incident-review",
+  "title": "Outage postmortem",
+  "notes": [
+   {
+    "text": "we found out about the outage from twitter",
+    "type": "problem",
+    "theme": "detection",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "alert fired but went to an old email list",
+    "type": "problem",
+    "theme": "detection",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "Sasha to fix alert routing to pagerduty by Friday",
+    "type": "action",
+    "theme": "detection",
+    "owner": "sasha",
+    "due": "friday"
+   },
+   {
+    "text": "synthetic checks on login every minute",
+    "type": "idea",
+    "theme": "detection",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "every service needs an owner in the alert config",
+    "type": "decision",
+    "theme": "detection",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "why didn't the health check catch it?",
+    "type": "question",
+    "theme": "detection",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "status page was updated 40 minutes late",
+    "type": "problem",
+    "theme": "response",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "pre-written status page templates",
+    "type": "idea",
+    "theme": "response",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "write the incident comms template",
+    "type": "action",
+    "theme": "response",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "who is allowed to post on the status page?",
+    "type": "question",
+    "theme": "response",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "on-call lead updates the status page within 10 min",
+    "type": "decision",
+    "theme": "response",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "lukas adds a canary deploy step next sprint",
+    "type": "action",
+    "theme": "prevention",
+    "owner": "lukas",
+    "due": "next sprint"
+   },
+   {
+    "text": "config change went straight to prod",
+    "type": "problem",
+    "theme": "prevention",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "require two approvals for prod config changes",
+    "type": "idea",
+    "theme": "prevention",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "config changes go through the same review as code",
+    "type": "decision",
+    "theme": "prevention",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "do we roll back automatically on error spikes?",
+    "type": "question",
+    "theme": "prevention",
+    "owner": null,
+    "due": null
+   }
+  ]
+ },
+ {
+  "board": "newsletter",
+  "title": "Newsletter relaunch",
+  "notes": [
+   {
+    "text": "open rate dropped to 18%",
+    "type": "problem",
+    "theme": "content",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "one tip per issue instead of 10 links",
+    "type": "idea",
+    "theme": "content",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "June drafts the new format, Monday",
+    "type": "action",
+    "theme": "content",
+    "owner": "june",
+    "due": "monday"
+   },
+   {
+    "text": "what do subscribers click on most?",
+    "type": "question",
+    "theme": "content",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "newsletter goes biweekly",
+    "type": "decision",
+    "theme": "content",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "30% of the list hasn't opened in a year",
+    "type": "problem",
+    "theme": "list",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "run a re-engagement email to inactive subscribers",
+    "type": "action",
+    "theme": "list",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "let people pick topics when they sign up",
+    "type": "idea",
+    "theme": "list",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "remove anyone inactive after the re-engagement email",
+    "type": "decision",
+    "theme": "list",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "does removing them hurt our sender score?",
+    "type": "question",
+    "theme": "list",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "plain text style that feels personal",
+    "type": "idea",
+    "theme": "design",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "images break in outlook",
+    "type": "problem",
+    "theme": "design",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "I'll test the template in outlook and gmail next week",
+    "type": "action",
+    "theme": "design",
+    "owner": "author",
+    "due": "next week"
+   },
+   {
+    "text": "max one image per issue",
+    "type": "decision",
+    "theme": "design",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "do we need a dark mode version?",
+    "type": "question",
+    "theme": "design",
+    "owner": null,
+    "due": null
+   }
+  ]
+ }
+]

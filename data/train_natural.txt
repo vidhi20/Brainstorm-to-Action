@@ -1,0 +1,191 @@
+# Hand-written NATURAL training boards (topics differ from the test boards). type | theme | owner | due | text
+@board checkout-sprint: Checkout redesign sprint planning
+problem|payment|-|-|guest checkout asks for a password at the very end
+problem|payment|-|-|apple pay button is below the fold on mobile
+idea|payment|-|-|one-tap reorder for returning customers
+idea|payment|-|-|save card details by default with an easy opt out
+decision|payment|-|-|PayPal stays, we're removing the gift card field from step 1
+action|payment|sofia|thursday|Sofia to move the apple pay button above the fold by Thursday
+question|payment|-|-|how many people abandon at the payment step?
+action|payment|-|-|pull abandonment numbers per checkout step
+problem|shipping|-|-|shipping cost only shows up on the last screen
+idea|shipping|-|-|estimate shipping on the cart page using zip code
+question|shipping|-|-|can the warehouse API return delivery dates?
+action|shipping|nate|next sprint|nate owns the shipping estimate spike next sprint
+decision|shipping|-|-|free shipping threshold stays at $50
+problem|shipping|-|-|international addresses fail validation
+idea|copy|-|-|rewrite error messages so they say how to fix the problem
+action|copy|author|friday|I'll draft new error copy and share by friday
+problem|copy|-|-|"Invalid input" tells people nothing
+question|copy|-|-|do we need legal review for the returns text?
+decision|copy|-|-|we use plain language, no jargon, in every checkout message
+idea|copy|-|-|show a progress bar with 3 steps
+@board campaign-brainstorm: Spring campaign brainstorm
+idea|channels|-|-|partner with 3 podcasts our users already listen to
+idea|channels|-|-|short how-to videos for linkedin
+problem|channels|-|-|paid social CPC went up 35% this quarter
+question|channels|-|-|which channel brought our best customers last year?
+action|channels|amara|monday|Amara: channel attribution report, Monday
+decision|channels|-|-|we're cutting display ads entirely
+idea|message|-|-|lead with time saved, not features
+problem|message|-|-|our homepage headline means nothing to new visitors
+action|message|pete|next week|pete to test 3 headline variants next week
+question|message|-|-|who is the primary persona for this campaign?
+decision|message|-|-|tagline is "Plan less, ship more"
+idea|message|-|-|customer quote on every ad
+action|budget|author|-|i'll get the final budget number from finance
+question|budget|-|-|is the budget split by quarter or annual?
+problem|budget|-|-|we overspent on events in Q4
+decision|budget|-|-|60% of budget goes to content and video
+idea|budget|-|-|hold back 10% for whatever works best in month one
+action|budget|-|-|set up a weekly spend tracker
+@board advisory-board: Customer advisory board notes
+problem|integrations|-|-|enterprise customers need Salesforce sync both ways
+idea|integrations|-|-|zapier templates for the top 10 workflows
+question|integrations|-|-|which integrations do lost deals ask for?
+action|integrations|ken|end of month|Ken compiles the integration requests from lost deals by end of month
+decision|integrations|-|-|Salesforce two-way sync is the top Q3 bet
+problem|admin|-|-|admins can't see who has access to what
+idea|admin|-|-|a single permissions page with filters
+action|admin|lia|11/15|@lia share the permissions mockups with the board - 11/15
+question|admin|-|-|do admins want SCIM or is SSO enough?
+decision|admin|-|-|audit log export ships before any new admin features
+problem|reporting|-|-|exec reports take hours to build by hand
+idea|reporting|-|-|scheduled PDF report emailed every Monday
+question|reporting|-|-|what metrics do execs actually look at?
+action|reporting|author|next week|I will interview 5 execs about their reports next week
+decision|reporting|-|-|no custom report builder this year
+problem|reporting|-|-|charts don't match the numbers in billing
+@board remote-retro: Remote work retro
+problem|meetings|-|-|too many meetings on Tuesdays
+idea|meetings|-|-|no-meeting wednesdays
+decision|meetings|-|-|standups are async in slack from now on
+action|meetings|diana|friday|Diana sets up the async standup bot by Friday
+question|meetings|-|-|do we still need the weekly all-hands?
+problem|meetings|-|-|people in APAC always get the 10pm slot
+idea|tools|-|-|one shared doc hub instead of 4 wikis
+problem|tools|-|-|nobody knows which wiki is current
+action|tools|-|-|archive the old confluence space
+question|tools|-|-|who pays for the new tool licenses?
+decision|tools|-|-|Notion is the single source of truth
+action|tools|felix|dec 1|Felix migrates the onboarding docs by Dec 1
+problem|culture|-|-|new hires feel isolated the first month
+idea|culture|-|-|buddy program for every new hire
+idea|culture|-|-|virtual coffee roulette every two weeks
+action|culture|author|tomorrow|ill pair up buddies for the next 3 hires tomorrow
+question|culture|-|-|should we fund one in-person meetup a year?
+@board data-migration: Data platform migration
+problem|pipeline|-|-|nightly jobs fail about twice a week
+question|pipeline|-|-|which jobs block the morning dashboards?
+action|pipeline|yuki|next sprint|yuki to add retries + alerts to the nightly jobs next sprint
+decision|pipeline|-|-|we move to the new orchestrator in phase 1
+idea|pipeline|-|-|run old and new pipelines side by side for two weeks
+problem|quality|-|-|revenue numbers differ between finance and product dashboards
+idea|quality|-|-|one certified metrics layer everyone reads from
+action|quality|author|friday|I'll list every revenue definition we use by fri
+question|quality|-|-|who signs off on the official revenue definition?
+decision|quality|-|-|finance owns the revenue definition
+problem|access|-|-|analysts wait days for database access
+idea|access|-|-|self-serve access requests with manager approval
+action|access|-|-|document the access request process
+decision|access|-|-|read-only access is granted by default to analysts
+question|access|-|-|does this pass the security review?
+action|access|omari|q2|Omari owns the access automation in Q2
+@board holiday-sale: Holiday sale prep
+problem|site|-|-|site went down for 20 minutes during last year's sale
+action|site|bao|next week|Bao runs a load test at 3x traffic next week
+question|site|-|-|is the CDN contract big enough for peak?
+decision|site|-|-|code freeze starts Nov 20
+idea|site|-|-|waiting room page if traffic spikes
+idea|deals|-|-|early access for loyalty members
+decision|deals|-|-|max discount is 30% this year
+problem|deals|-|-|last year's coupon codes got leaked on reddit
+action|deals|carmen|tomorrow|carmen will set up single-use codes tomorrow
+question|deals|-|-|do we stack deals with the loyalty discount?
+problem|ops|-|-|warehouse ran out of boxes on day 2
+action|ops|-|-|order 2x packaging supplies
+idea|ops|-|-|extra temp staff for the first weekend
+question|ops|-|-|what's the cutoff date for christmas delivery?
+decision|ops|-|-|customer support runs extended hours all week
+@board design-system: Design system cleanup
+problem|components|-|-|we have 6 different button styles in production
+idea|components|-|-|deprecate anything not used in the last 90 days
+action|components|ivy|friday|Ivy to audit button usage across the app by Friday
+decision|components|-|-|one primary, one secondary, one ghost button. that's it
+question|components|-|-|who approves new components?
+problem|docs|-|-|designers don't know which figma library is current
+idea|docs|-|-|storybook page for every component with do/don't examples
+action|docs|author|end of month|I'll write the contribution guide by end of month
+question|docs|-|-|should docs live in figma or storybook?
+decision|docs|-|-|storybook is the source of truth for engineers
+problem|a11y|-|-|color contrast fails on half our grey text
+action|a11y|ravi|dec 15|Ravi fixes contrast tokens - dec 15
+idea|a11y|-|-|automated accessibility check in CI
+question|a11y|-|-|do we have a screen reader user to test with?
+decision|a11y|-|-|WCAG AA is the minimum for every new screen
+@board partner-brainstorm: Partner integrations brainstorm
+idea|marketplace|-|-|public marketplace for partner apps
+idea|marketplace|-|-|revenue share for top partner apps
+question|marketplace|-|-|how do we review partner apps for security?
+problem|marketplace|-|-|partners email us PDFs instead of using the API
+action|marketplace|tess|next week|Tess drafts the marketplace one-pager next week
+decision|marketplace|-|-|marketplace launches invite-only
+problem|api|-|-|rate limits are too low for bulk imports
+idea|api|-|-|webhooks for every object change
+action|api|-|-|publish the API changelog publicly
+question|api|-|-|do we version the API by date or number?
+decision|api|-|-|we're going with date-based API versions
+action|api|author|monday|I'll write the webhook RFC by monday
+problem|support|-|-|partner tickets get lost in the main support queue
+idea|support|-|-|dedicated partner slack channel
+action|support|gus|11/28|@gus create a partner tag in zendesk by 11/28
+decision|support|-|-|partner tickets get a 24h response SLA
+@board support-retro: Support team retro
+problem|volume|-|-|tickets doubled after the pricing change
+question|volume|-|-|which question shows up the most?
+idea|volume|-|-|chatbot that answers the top 20 billing questions
+action|volume|hal|tomorrow|Hal tags the last 500 tickets by topic tomorrow
+decision|volume|-|-|we hire 2 more agents for Q1
+problem|tools|-|-|agents switch between 5 tabs to answer one ticket
+idea|tools|-|-|customer context panel inside the ticket view
+action|tools|-|-|list the 5 tabs and what data each one gives
+question|tools|-|-|can we build the panel or do we buy it?
+decision|tools|-|-|buy, not build, for the context panel
+problem|morale|-|-|weekend shifts are burning people out
+idea|morale|-|-|rotate weekend shifts monthly
+action|morale|author|next week|i'll propose a new rotation next week
+question|morale|-|-|can we offer comp days for weekend work?
+decision|morale|-|-|weekend shifts become voluntary with extra pay
+@board incident-review: Outage postmortem
+problem|detection|-|-|we found out about the outage from twitter
+problem|detection|-|-|alert fired but went to an old email list
+action|detection|sasha|friday|Sasha to fix alert routing to pagerduty by Friday
+idea|detection|-|-|synthetic checks on login every minute
+decision|detection|-|-|every service needs an owner in the alert config
+question|detection|-|-|why didn't the health check catch it?
+problem|response|-|-|status page was updated 40 minutes late
+idea|response|-|-|pre-written status page templates
+action|response|-|-|write the incident comms template
+question|response|-|-|who is allowed to post on the status page?
+decision|response|-|-|on-call lead updates the status page within 10 min
+action|prevention|lukas|next sprint|lukas adds a canary deploy step next sprint
+problem|prevention|-|-|config change went straight to prod
+idea|prevention|-|-|require two approvals for prod config changes
+decision|prevention|-|-|config changes go through the same review as code
+question|prevention|-|-|do we roll back automatically on error spikes?
+@board newsletter: Newsletter relaunch
+problem|content|-|-|open rate dropped to 18%
+idea|content|-|-|one tip per issue instead of 10 links
+action|content|june|monday|June drafts the new format, Monday
+question|content|-|-|what do subscribers click on most?
+decision|content|-|-|newsletter goes biweekly
+problem|list|-|-|30% of the list hasn't opened in a year
+action|list|-|-|run a re-engagement email to inactive subscribers
+idea|list|-|-|let people pick topics when they sign up
+decision|list|-|-|remove anyone inactive after the re-engagement email
+question|list|-|-|does removing them hurt our sender score?
+idea|design|-|-|plain text style that feels personal
+problem|design|-|-|images break in outlook
+action|design|author|next week|I'll test the template in outlook and gmail next week
+decision|design|-|-|max one image per issue
+question|design|-|-|do we need a dark mode version?

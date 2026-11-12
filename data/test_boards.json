@@ -1,0 +1,918 @@
+[
+ {
+  "board": "retro-mobile-launch",
+  "title": "Mobile app v3 launch retro",
+  "notes": [
+   {
+    "text": "App store review took 6 days, nobody planned for that",
+    "type": "problem",
+    "theme": "release",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "release notes were written the night before",
+    "type": "problem",
+    "theme": "release",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "Maya to build a release checklist before next release",
+    "type": "action",
+    "theme": "release",
+    "owner": "maya",
+    "due": "next release"
+   },
+   {
+    "text": "We're moving to a two-week release train starting January",
+    "type": "decision",
+    "theme": "release",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "can we get expedited review from Apple next time?",
+    "type": "question",
+    "theme": "release",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "crash rate on Android 12 doubled after launch",
+    "type": "problem",
+    "theme": "crashes",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "Kenji - add crash alerts to the on-call channel by Friday",
+    "type": "action",
+    "theme": "crashes",
+    "owner": "kenji",
+    "due": "friday"
+   },
+   {
+    "text": "what about a staged rollout to 5% of users first",
+    "type": "idea",
+    "theme": "crashes",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "do we know which devices are crashing the most?",
+    "type": "question",
+    "theme": "crashes",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "1-star reviews all mention the new nav bar",
+    "type": "problem",
+    "theme": "feedback",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "in-app survey after 3 sessions to catch issues earlier",
+    "type": "idea",
+    "theme": "feedback",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "I'll pull the review themes into a doc by monday",
+    "type": "action",
+    "theme": "feedback",
+    "owner": "author",
+    "due": "monday"
+   },
+   {
+    "text": "agreed: revert the nav bar icons, keep the layout",
+    "type": "decision",
+    "theme": "feedback",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "reply to every 1-star review within 24h??",
+    "type": "idea",
+    "theme": "feedback",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "design handoff happened after code freeze",
+    "type": "problem",
+    "theme": "release",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "set up a crash dashboard for the whole team",
+    "type": "action",
+    "theme": "crashes",
+    "owner": null,
+    "due": null
+   }
+  ]
+ },
+ {
+  "board": "pricing-workshop",
+  "title": "Pricing and packaging workshop",
+  "notes": [
+   {
+    "text": "Customers can't tell the difference between Pro and Business",
+    "type": "problem",
+    "theme": "plans",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "three plans max, kill the Starter tier",
+    "type": "idea",
+    "theme": "plans",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "Team plan becomes the default on the pricing page",
+    "type": "decision",
+    "theme": "plans",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "what % of Starter users ever upgrade?",
+    "type": "question",
+    "theme": "plans",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "Grace pulls upgrade rates per plan by end of month",
+    "type": "action",
+    "theme": "plans",
+    "owner": "grace",
+    "due": "end of month"
+   },
+   {
+    "text": "sales gives 40% discounts without approval",
+    "type": "problem",
+    "theme": "discounts",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "@Leo write the discount approval policy - 11/22",
+    "type": "action",
+    "theme": "discounts",
+    "owner": "leo",
+    "due": "11/22"
+   },
+   {
+    "text": "should discounts over 20% need VP sign off",
+    "type": "question",
+    "theme": "discounts",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "offer annual prepay instead of ad hoc discounts",
+    "type": "idea",
+    "theme": "discounts",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "No more lifetime deals. Final.",
+    "type": "decision",
+    "theme": "discounts",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "14 day trial is too short for enterprise pilots",
+    "type": "problem",
+    "theme": "trial",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "let enterprise trials extend to 30 days on request",
+    "type": "idea",
+    "theme": "trial",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "How many trials convert in week 2 vs week 1?",
+    "type": "question",
+    "theme": "trial",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "I will send the trial conversion query tomorrow",
+    "type": "action",
+    "theme": "trial",
+    "owner": "author",
+    "due": "tomorrow"
+   },
+   {
+    "text": "Ines owns the trial extension experiment, Q1",
+    "type": "action",
+    "theme": "trial",
+    "owner": "ines",
+    "due": "q1"
+   },
+   {
+    "text": "usage-based add-on for AI credits",
+    "type": "idea",
+    "theme": "plans",
+    "owner": null,
+    "due": null
+   }
+  ]
+ },
+ {
+  "board": "ai-assistant-brainstorm",
+  "title": "AI assistant for our docs app",
+  "notes": [
+   {
+    "text": "summarize long docs into 5 bullets",
+    "type": "idea",
+    "theme": "use_cases",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "turn meeting notes into a task list automatically",
+    "type": "idea",
+    "theme": "use_cases",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "which use case do users actually ask support about most?",
+    "type": "question",
+    "theme": "use_cases",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "Fatima to run 8 user interviews on AI use cases next week",
+    "type": "action",
+    "theme": "use_cases",
+    "owner": "fatima",
+    "due": "next week"
+   },
+   {
+    "text": "answers sometimes make up facts that are not in the doc",
+    "type": "problem",
+    "theme": "trust",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "show the source paragraph next to every AI answer",
+    "type": "idea",
+    "theme": "trust",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "AI answers must always cite a source. non-negotiable",
+    "type": "decision",
+    "theme": "trust",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "how do we measure hallucination rate?",
+    "type": "question",
+    "theme": "trust",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "Omar builds an eval set of 100 questions by Dec 10",
+    "type": "action",
+    "theme": "trust",
+    "owner": "omar",
+    "due": "dec 10"
+   },
+   {
+    "text": "LLM costs could eat our margin on the free plan",
+    "type": "problem",
+    "theme": "cost",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "cap free users at 20 AI requests a month",
+    "type": "idea",
+    "theme": "cost",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "What's our cost per AI request today?",
+    "type": "question",
+    "theme": "cost",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "estimate monthly token spend for 3 usage scenarios",
+    "type": "action",
+    "theme": "cost",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "AI is a paid add-on at launch, not in free",
+    "type": "decision",
+    "theme": "cost",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "people don't discover features hidden in menus",
+    "type": "problem",
+    "theme": "use_cases",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "thumbs up / down on every answer",
+    "type": "idea",
+    "theme": "trust",
+    "owner": null,
+    "due": null
+   }
+  ]
+ },
+ {
+  "board": "onboarding-retro",
+  "title": "Customer onboarding retro (B2B)",
+  "notes": [
+   {
+    "text": "kickoff calls run 90 minutes and half of it is slides",
+    "type": "problem",
+    "theme": "kickoff",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "send a 3 min video before the kickoff instead",
+    "type": "idea",
+    "theme": "kickoff",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "Zoe will trim the kickoff deck to 10 slides by Fri",
+    "type": "action",
+    "theme": "kickoff",
+    "owner": "zoe",
+    "due": "friday"
+   },
+   {
+    "text": "Kickoff is 45 minutes max from now on",
+    "type": "decision",
+    "theme": "kickoff",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "admins get stuck on SSO configuration",
+    "type": "problem",
+    "theme": "setup",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "Can we pre-fill the SSO settings from their IdP?",
+    "type": "question",
+    "theme": "setup",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "arjun to write an SSO troubleshooting guide next sprint",
+    "type": "action",
+    "theme": "setup",
+    "owner": "arjun",
+    "due": "next sprint"
+   },
+   {
+    "text": "CSV import fails silently when columns are missing",
+    "type": "problem",
+    "theme": "setup",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "import wizard that previews errors before upload",
+    "type": "idea",
+    "theme": "setup",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "I'll file the CSV import bug with eng",
+    "type": "action",
+    "theme": "setup",
+    "owner": "author",
+    "due": null
+   },
+   {
+    "text": "only 30% of invited seats are active after 30 days",
+    "type": "problem",
+    "theme": "adoption",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "weekly digest email to inactive seats",
+    "type": "idea",
+    "theme": "adoption",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "who is the champion at each account?",
+    "type": "question",
+    "theme": "adoption",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "Bella: build an adoption health score in the CRM, Monday",
+    "type": "action",
+    "theme": "adoption",
+    "owner": "bella",
+    "due": "monday"
+   },
+   {
+    "text": "CSMs check seat activation at day 14 for every new account",
+    "type": "decision",
+    "theme": "adoption",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "shared success plan doc with the customer",
+    "type": "idea",
+    "theme": "kickoff",
+    "owner": null,
+    "due": null
+   }
+  ]
+ },
+ {
+  "board": "hackathon-planning",
+  "title": "Internal hackathon planning",
+  "notes": [
+   {
+    "text": "which week works for both the US and India teams?",
+    "type": "question",
+    "theme": "logistics",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "Nina books the big room + zoom for both days tomorrow",
+    "type": "action",
+    "theme": "logistics",
+    "owner": "nina",
+    "due": "tomorrow"
+   },
+   {
+    "text": "last year half the remote folks couldn't join",
+    "type": "problem",
+    "theme": "logistics",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "Hackathon is hybrid, March 12-13",
+    "type": "decision",
+    "theme": "logistics",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "theme it around AI tools for our own workflows",
+    "type": "idea",
+    "theme": "projects",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "let customers vote on the winning project",
+    "type": "idea",
+    "theme": "projects",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "dev to collect project pitches in a form, next week",
+    "type": "action",
+    "theme": "projects",
+    "owner": "dev",
+    "due": "next week"
+   },
+   {
+    "text": "can winning projects get roadmap time?",
+    "type": "question",
+    "theme": "projects",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "good projects from last year never shipped",
+    "type": "problem",
+    "theme": "projects",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "winner gets one sprint of eng time to productionize",
+    "type": "decision",
+    "theme": "projects",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "prizes = extra PTO day instead of gift cards",
+    "type": "idea",
+    "theme": "prizes",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "whats the budget for prizes and food",
+    "type": "question",
+    "theme": "prizes",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "I'll ask finance for the budget by end of month",
+    "type": "action",
+    "theme": "prizes",
+    "owner": "author",
+    "due": "end of month"
+   },
+   {
+    "text": "food ordering last time was chaos",
+    "type": "problem",
+    "theme": "prizes",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "create the hackathon slack channel",
+    "type": "action",
+    "theme": "logistics",
+    "owner": null,
+    "due": null
+   }
+  ]
+ },
+ {
+  "board": "churn-deep-dive",
+  "title": "Churn deep dive",
+  "notes": [
+   {
+    "text": "top cancel reason is \"too expensive\"",
+    "type": "problem",
+    "theme": "reasons",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "users who never connect an integration churn 3x more",
+    "type": "problem",
+    "theme": "reasons",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "are we losing small teams or big ones?",
+    "type": "question",
+    "theme": "reasons",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "Carlos to segment churn by company size by 11/30",
+    "type": "action",
+    "theme": "reasons",
+    "owner": "carlos",
+    "due": "11/30"
+   },
+   {
+    "text": "offer a pause option instead of cancel",
+    "type": "idea",
+    "theme": "save",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "downgrade path to a cheaper plan on the cancel screen",
+    "type": "idea",
+    "theme": "save",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "we'll test the pause option with 10% of cancels",
+    "type": "decision",
+    "theme": "save",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "mei owns the cancel flow experiment in Q1",
+    "type": "action",
+    "theme": "save",
+    "owner": "mei",
+    "due": "q1"
+   },
+   {
+    "text": "Does a save offer hurt revenue long term?",
+    "type": "question",
+    "theme": "save",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "CSMs find out about churn risk too late",
+    "type": "problem",
+    "theme": "health",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "alert CSMs when weekly usage drops 50%",
+    "type": "idea",
+    "theme": "health",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "I'll draft the usage-drop alert spec next week",
+    "type": "action",
+    "theme": "health",
+    "owner": "author",
+    "due": "next week"
+   },
+   {
+    "text": "Health score goes live for enterprise accounts first",
+    "type": "decision",
+    "theme": "health",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "which usage signals predict churn best?",
+    "type": "question",
+    "theme": "health",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "exit survey only has a 12% response rate",
+    "type": "problem",
+    "theme": "reasons",
+    "owner": null,
+    "due": null
+   }
+  ]
+ },
+ {
+  "board": "team-offsite",
+  "title": "Team offsite ideas",
+  "notes": [
+   {
+    "text": "half day on roadmap, half day fun",
+    "type": "idea",
+    "theme": "agenda",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "who presents the H1 strategy?",
+    "type": "question",
+    "theme": "agenda",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "Ruth drafts the agenda by Friday",
+    "type": "action",
+    "theme": "agenda",
+    "owner": "ruth",
+    "due": "friday"
+   },
+   {
+    "text": "No laptops during the strategy session",
+    "type": "decision",
+    "theme": "agenda",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "last offsite had zero time for real discussion",
+    "type": "problem",
+    "theme": "agenda",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "cooking class as the team event",
+    "type": "idea",
+    "theme": "activities",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "volunteer afternoon at the food bank",
+    "type": "idea",
+    "theme": "activities",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "any dietary restrictions we need to plan for?",
+    "type": "question",
+    "theme": "activities",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "@tariq send the activity poll - Dec 5",
+    "type": "action",
+    "theme": "activities",
+    "owner": "tariq",
+    "due": "dec 5"
+   },
+   {
+    "text": "Going with the cooking class",
+    "type": "decision",
+    "theme": "activities",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "flights from Austin are really pricey that week",
+    "type": "problem",
+    "theme": "travel",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "ill book the group hotel block tomorrow",
+    "type": "action",
+    "theme": "travel",
+    "owner": "author",
+    "due": "tomorrow"
+   },
+   {
+    "text": "is there a per person travel cap?",
+    "type": "question",
+    "theme": "travel",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "Everyone flies in Tuesday, out Thursday",
+    "type": "decision",
+    "theme": "travel",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "carpool from the airport to save on rides",
+    "type": "idea",
+    "theme": "travel",
+    "owner": null,
+    "due": null
+   }
+  ]
+ },
+ {
+  "board": "search-quality",
+  "title": "Search quality working session",
+  "notes": [
+   {
+    "text": "searching \"invoice\" returns old archived docs first",
+    "type": "problem",
+    "theme": "relevance",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "boost recently edited docs in ranking",
+    "type": "idea",
+    "theme": "relevance",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "how do we measure search quality? click-through?",
+    "type": "question",
+    "theme": "relevance",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "Hiro sets up a search relevance dashboard next sprint",
+    "type": "action",
+    "theme": "relevance",
+    "owner": "hiro",
+    "due": "next sprint"
+   },
+   {
+    "text": "archived docs are excluded from default results",
+    "type": "decision",
+    "theme": "relevance",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "search takes 4+ seconds on big workspaces",
+    "type": "problem",
+    "theme": "speed",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "profile the search query on the largest 10 workspaces",
+    "type": "action",
+    "theme": "speed",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "cache results for the most common queries",
+    "type": "idea",
+    "theme": "speed",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "is the slowness the index or the network?",
+    "type": "question",
+    "theme": "speed",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "people don't know filters exist",
+    "type": "problem",
+    "theme": "filters",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "show filter chips right under the search bar",
+    "type": "idea",
+    "theme": "filters",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "Lena mocks up filter chips, Monday",
+    "type": "action",
+    "theme": "filters",
+    "owner": "lena",
+    "due": "monday"
+   },
+   {
+    "text": "Ship filter chips behind a flag first",
+    "type": "decision",
+    "theme": "filters",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "which filters get used the most today?",
+    "type": "question",
+    "theme": "filters",
+    "owner": null,
+    "due": null
+   },
+   {
+    "text": "let users pin results for their team",
+    "type": "idea",
+    "theme": "relevance",
+    "owner": null,
+    "due": null
+   }
+  ]
+ }
+]

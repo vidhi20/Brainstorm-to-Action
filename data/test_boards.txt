@@ -1,0 +1,133 @@
+# Hand-written held-out test set. Format: type | theme | owner | due | text   (owner/due only for action items, "-" = none)
+@board retro-mobile-launch: Mobile app v3 launch retro
+problem|release|-|-|App store review took 6 days, nobody planned for that
+problem|release|-|-|release notes were written the night before
+action|release|maya|next release|Maya to build a release checklist before next release
+decision|release|-|-|We're moving to a two-week release train starting January
+question|release|-|-|can we get expedited review from Apple next time?
+problem|crashes|-|-|crash rate on Android 12 doubled after launch
+action|crashes|kenji|friday|Kenji - add crash alerts to the on-call channel by Friday
+idea|crashes|-|-|what about a staged rollout to 5% of users first
+question|crashes|-|-|do we know which devices are crashing the most?
+problem|feedback|-|-|1-star reviews all mention the new nav bar
+idea|feedback|-|-|in-app survey after 3 sessions to catch issues earlier
+action|feedback|author|monday|I'll pull the review themes into a doc by monday
+decision|feedback|-|-|agreed: revert the nav bar icons, keep the layout
+idea|feedback|-|-|reply to every 1-star review within 24h??
+problem|release|-|-|design handoff happened after code freeze
+action|crashes|-|-|set up a crash dashboard for the whole team
+@board pricing-workshop: Pricing and packaging workshop
+problem|plans|-|-|Customers can't tell the difference between Pro and Business
+idea|plans|-|-|three plans max, kill the Starter tier
+decision|plans|-|-|Team plan becomes the default on the pricing page
+question|plans|-|-|what % of Starter users ever upgrade?
+action|plans|grace|end of month|Grace pulls upgrade rates per plan by end of month
+problem|discounts|-|-|sales gives 40% discounts without approval
+action|discounts|leo|11/22|@Leo write the discount approval policy - 11/22
+question|discounts|-|-|should discounts over 20% need VP sign off
+idea|discounts|-|-|offer annual prepay instead of ad hoc discounts
+decision|discounts|-|-|No more lifetime deals. Final.
+problem|trial|-|-|14 day trial is too short for enterprise pilots
+idea|trial|-|-|let enterprise trials extend to 30 days on request
+question|trial|-|-|How many trials convert in week 2 vs week 1?
+action|trial|author|tomorrow|I will send the trial conversion query tomorrow
+action|trial|ines|q1|Ines owns the trial extension experiment, Q1
+idea|plans|-|-|usage-based add-on for AI credits
+@board ai-assistant-brainstorm: AI assistant for our docs app
+idea|use_cases|-|-|summarize long docs into 5 bullets
+idea|use_cases|-|-|turn meeting notes into a task list automatically
+question|use_cases|-|-|which use case do users actually ask support about most?
+action|use_cases|fatima|next week|Fatima to run 8 user interviews on AI use cases next week
+problem|trust|-|-|answers sometimes make up facts that are not in the doc
+idea|trust|-|-|show the source paragraph next to every AI answer
+decision|trust|-|-|AI answers must always cite a source. non-negotiable
+question|trust|-|-|how do we measure hallucination rate?
+action|trust|omar|dec 10|Omar builds an eval set of 100 questions by Dec 10
+problem|cost|-|-|LLM costs could eat our margin on the free plan
+idea|cost|-|-|cap free users at 20 AI requests a month
+question|cost|-|-|What's our cost per AI request today?
+action|cost|-|-|estimate monthly token spend for 3 usage scenarios
+decision|cost|-|-|AI is a paid add-on at launch, not in free
+problem|use_cases|-|-|people don't discover features hidden in menus
+idea|trust|-|-|thumbs up / down on every answer
+@board onboarding-retro: Customer onboarding retro (B2B)
+problem|kickoff|-|-|kickoff calls run 90 minutes and half of it is slides
+idea|kickoff|-|-|send a 3 min video before the kickoff instead
+action|kickoff|zoe|friday|Zoe will trim the kickoff deck to 10 slides by Fri
+decision|kickoff|-|-|Kickoff is 45 minutes max from now on
+problem|setup|-|-|admins get stuck on SSO configuration
+question|setup|-|-|Can we pre-fill the SSO settings from their IdP?
+action|setup|arjun|next sprint|arjun to write an SSO troubleshooting guide next sprint
+problem|setup|-|-|CSV import fails silently when columns are missing
+idea|setup|-|-|import wizard that previews errors before upload
+action|setup|author|-|I'll file the CSV import bug with eng
+problem|adoption|-|-|only 30% of invited seats are active after 30 days
+idea|adoption|-|-|weekly digest email to inactive seats
+question|adoption|-|-|who is the champion at each account?
+action|adoption|bella|monday|Bella: build an adoption health score in the CRM, Monday
+decision|adoption|-|-|CSMs check seat activation at day 14 for every new account
+idea|kickoff|-|-|shared success plan doc with the customer
+@board hackathon-planning: Internal hackathon planning
+question|logistics|-|-|which week works for both the US and India teams?
+action|logistics|nina|tomorrow|Nina books the big room + zoom for both days tomorrow
+problem|logistics|-|-|last year half the remote folks couldn't join
+decision|logistics|-|-|Hackathon is hybrid, March 12-13
+idea|projects|-|-|theme it around AI tools for our own workflows
+idea|projects|-|-|let customers vote on the winning project
+action|projects|dev|next week|dev to collect project pitches in a form, next week
+question|projects|-|-|can winning projects get roadmap time?
+problem|projects|-|-|good projects from last year never shipped
+decision|projects|-|-|winner gets one sprint of eng time to productionize
+idea|prizes|-|-|prizes = extra PTO day instead of gift cards
+question|prizes|-|-|whats the budget for prizes and food
+action|prizes|author|end of month|I'll ask finance for the budget by end of month
+problem|prizes|-|-|food ordering last time was chaos
+action|logistics|-|-|create the hackathon slack channel
+@board churn-deep-dive: Churn deep dive
+problem|reasons|-|-|top cancel reason is "too expensive"
+problem|reasons|-|-|users who never connect an integration churn 3x more
+question|reasons|-|-|are we losing small teams or big ones?
+action|reasons|carlos|11/30|Carlos to segment churn by company size by 11/30
+idea|save|-|-|offer a pause option instead of cancel
+idea|save|-|-|downgrade path to a cheaper plan on the cancel screen
+decision|save|-|-|we'll test the pause option with 10% of cancels
+action|save|mei|q1|mei owns the cancel flow experiment in Q1
+question|save|-|-|Does a save offer hurt revenue long term?
+problem|health|-|-|CSMs find out about churn risk too late
+idea|health|-|-|alert CSMs when weekly usage drops 50%
+action|health|author|next week|I'll draft the usage-drop alert spec next week
+decision|health|-|-|Health score goes live for enterprise accounts first
+question|health|-|-|which usage signals predict churn best?
+problem|reasons|-|-|exit survey only has a 12% response rate
+@board team-offsite: Team offsite ideas
+idea|agenda|-|-|half day on roadmap, half day fun
+question|agenda|-|-|who presents the H1 strategy?
+action|agenda|ruth|friday|Ruth drafts the agenda by Friday
+decision|agenda|-|-|No laptops during the strategy session
+problem|agenda|-|-|last offsite had zero time for real discussion
+idea|activities|-|-|cooking class as the team event
+idea|activities|-|-|volunteer afternoon at the food bank
+question|activities|-|-|any dietary restrictions we need to plan for?
+action|activities|tariq|dec 5|@tariq send the activity poll - Dec 5
+decision|activities|-|-|Going with the cooking class
+problem|travel|-|-|flights from Austin are really pricey that week
+action|travel|author|tomorrow|ill book the group hotel block tomorrow
+question|travel|-|-|is there a per person travel cap?
+decision|travel|-|-|Everyone flies in Tuesday, out Thursday
+idea|travel|-|-|carpool from the airport to save on rides
+@board search-quality: Search quality working session
+problem|relevance|-|-|searching "invoice" returns old archived docs first
+idea|relevance|-|-|boost recently edited docs in ranking
+question|relevance|-|-|how do we measure search quality? click-through?
+action|relevance|hiro|next sprint|Hiro sets up a search relevance dashboard next sprint
+decision|relevance|-|-|archived docs are excluded from default results
+problem|speed|-|-|search takes 4+ seconds on big workspaces
+action|speed|-|-|profile the search query on the largest 10 workspaces
+idea|speed|-|-|cache results for the most common queries
+question|speed|-|-|is the slowness the index or the network?
+problem|filters|-|-|people don't know filters exist
+idea|filters|-|-|show filter chips right under the search bar
+action|filters|lena|monday|Lena mocks up filter chips, Monday
+decision|filters|-|-|Ship filter chips behind a flag first
+question|filters|-|-|which filters get used the most today?
+idea|relevance|-|-|let users pin results for their team
