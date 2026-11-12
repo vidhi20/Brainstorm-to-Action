@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brainstorm to Action</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* layout: input board on the left, sorted action board on the right; summary first, detail after */
+  --ink:#1d2330; --muted:#5b6475; --paper:#f4f2ec; --card:#ffffff; --line:#dcd8cc; --accent:#2f5bd3;
+  --action:#1f7a4d; --decision:#6b3fb8; --question:#b15c00; --problem:#b3261e; --idea:#2f5bd3;
+  --chip-bg:#eef1f8; --warn-bg:#fff4e0; --warn:#8a4b00;
+  --display:"Bricolage Grotesque", "Avenir Next", system-ui, sans-serif;
+  --body:"IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --mono:"IBM Plex Mono", ui-monospace, monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --ink:#e8eaf0; --muted:#a3abbb; --paper:#14171e; --card:#1d212b; --line:#323846; --accent:#7f9cff;
+  --action:#4fc28a; --decision:#b493f2; --question:#f0a54a; --problem:#ff8a80; --idea:#7f9cff;
+  --chip-bg:#262c3a; --warn-bg:#3a2c12; --warn:#f4c56b; color-scheme: dark; } }
+:root[data-theme="dark"]{
+  --ink:#e8eaf0; --muted:#a3abbb; --paper:#14171e; --card:#1d212b; --line:#323846; --accent:#7f9cff;
+  --action:#4fc28a; --decision:#b493f2; --question:#f0a54a; --problem:#ff8a80; --idea:#7f9cff;
+  --chip-bg:#262c3a; --warn-bg:#3a2c12; --warn:#f4c56b; color-scheme: dark; }
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.5}
+.wrap{max-width:1180px;margin:0 auto;padding:28px 20px 48px;display:grid;gap:22px}
+header h1{font-family:var(--display);font-weight:800;font-size:clamp(28px,4vw,40px);margin:0;letter-spacing:-.02em;text-wrap:balance}
+header p{margin:6px 0 0;color:var(--muted);max-width:68ch}
+.grid{display:grid;grid-template-columns:minmax(280px,380px) 1fr;gap:22px;align-items:start}
+@media (max-width:860px){.grid{grid-template-columns:1fr}}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px}
+.panel h2{font-family:var(--display);font-weight:600;font-size:18px;margin:0 0 10px}
+label{font-weight:600;font-size:13px;color:var(--muted);display:block;margin-bottom:6px}
+select,textarea{width:100%;font:inherit;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:10px}
+textarea{min-height:360px;font-size:14px;resize:vertical}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+button{font:inherit;font-weight:600;border-radius:8px;padding:10px 16px;cursor:pointer;border:1px solid var(--accent);background:var(--accent);color:#fff}
+button.ghost{background:transparent;color:var(--accent)}
+button:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.hint{font-size:13px;color:var(--muted);margin:8px 0 0}
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:16px}
+@media (max-width:560px){.tiles{grid-template-columns:repeat(2,1fr)}}
+.tile{border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+.tile b{display:block;font-family:var(--display);font-size:26px;font-variant-numeric:tabular-nums}
+.tile span{font-size:13px;color:var(--muted)}
+.tile.warn{background:var(--warn-bg);border-color:transparent}.tile.warn b,.tile.warn span{color:var(--warn)}
+.tablewrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th{text-align:left;font-size:12px;color:var(--muted);font-weight:600;padding:6px 8px;border-bottom:1px solid var(--line)}
+td{padding:8px;border-bottom:1px solid var(--line);vertical-align:top}
+td.num{font-family:var(--mono);font-variant-numeric:tabular-nums;color:var(--muted);white-space:nowrap}
+.pill{display:inline-block;font-size:12px;font-weight:600;padding:2px 8px;border-radius:999px;background:var(--chip-bg);white-space:nowrap}
+.pill.missing{background:var(--warn-bg);color:var(--warn)}
+.cols{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:16px}
+@media (max-width:640px){.cols{grid-template-columns:1fr}}
+.col h3{font-size:14px;margin:0 0 8px;display:flex;gap:8px;align-items:center}
+.col h3 i{width:10px;height:10px;border-radius:3px;display:inline-block}
+.col ul{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.col li{border-left:3px solid var(--c);background:var(--paper);padding:7px 10px;border-radius:0 6px 6px 0;font-size:14px}
+.conf{font-family:var(--mono);font-size:11px;color:var(--muted);margin-left:6px}
+.card h2{margin-bottom:4px}
+.metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin:12px 0}
+.metric{border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+.metric b{font-family:var(--display);font-size:24px;font-variant-numeric:tabular-nums}
+.metric small{display:block;color:var(--muted);font-size:12.5px}
+.note{font-size:13.5px;color:var(--muted);max-width:90ch}
+#status{font-size:13px;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>Brainstorm to Action</h1>
+  <p>Paste the sticky notes from any brainstorm or retro. The model sorts every note into action items, decisions, open questions, problems and ideas, then pulls out the owner and due date of each action and flags the ones nobody owns. It runs entirely in your browser, so your notes never leave the page.</p>
+</header>
+<div class="grid">
+  <section class="panel" aria-label="Your board">
+    <h2>Your board</h2>
+    <label for="sample">Load an example board</label>
+    <select id="sample"></select>
+    <div style="height:12px"></div>
+    <label for="notes">Sticky notes, one per line</label>
+    <textarea id="notes" spellcheck="false"></textarea>
+    <div class="row" style="margin-top:12px">
+      <button id="go" type="button">Sort my board</button>
+      <span id="status"></span>
+    </div>
+    <p class="hint">Tip: write owners as “Maya to…”, “@leo” or “I’ll…”, and dates as “by Friday”, “11/22” or “next sprint”.</p>
+  </section>
+  <section class="panel" aria-label="Sorted board">
+    <div class="tiles" id="tiles"></div>
+    <div class="row" style="justify-content:space-between;margin-bottom:6px">
+      <h2 style="margin:0">Action items</h2>
+      <button class="ghost" id="copy" type="button">Copy action list</button>
+    </div>
+    <div class="tablewrap"><table>
+      <thead><tr><th>Task</th><th>Owner</th><th>Due</th><th>Confidence</th></tr></thead>
+      <tbody id="actions"></tbody>
+    </table></div>
+    <div class="cols" id="cols"></div>
+  </section>
+</div>
+<section class="panel card" aria-label="How well it works">
+  <h2>How well it works</h2>
+  <p class="note">Tested on 124 hand-written sticky notes from 8 boards that the model never saw in training. Compared with a keyword-rules baseline.</p>
+  <div class="metrics">
+    <div class="metric"><b>89%</b><small>of action items caught (keyword rules: 36%)</small></div>
+    <div class="metric"><b>81%</b><small>of notes flagged as actions really are actions</small></div>
+    <div class="metric"><b>25 of 28</b><small>action items with owner and due date both right</small></div>
+    <div class="metric"><b>68%</b><small>overall note-type accuracy (keyword rules: 54%)</small></div>
+    <div class="metric"><b>&lt;10 ms</b><small>to sort a 16-note board, no server, $0 per board</small></div>
+  </div>
+  <p class="note">Weak spots: telling ideas apart from decisions (F1 0.44 and 0.45), since both are often written as short statements. Automatic theme grouping was tested and did not meet the quality bar, so it is left out of this version.</p>
+</section>
+</div>
+<script id="model" type="application/json">__MODEL__</script>
+<script>__ENGINE__</script>
+<script>
+const SAMPLES = __SAMPLES__;
+const TYPES = [["decision","Decisions","--decision"],["question","Open questions","--question"],["problem","Problems","--problem"],["idea","Ideas","--idea"]];
+const $ = id => document.getElementById(id);
+const esc = s => s.replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const cap = s => s === "author" ? "You (note author)" : s.charAt(0).toUpperCase() + s.slice(1);
+let last = [];
+function render(res){
+  last = res;
+  const acts = res.filter(r => r.type === "action");
+  const noOwner = acts.filter(a => !a.owner).length, noDue = acts.filter(a => !a.due).length;
+  $("tiles").innerHTML = [
+    [res.length,"notes sorted",""],[acts.length,"action items",""],
+    [noOwner,"actions with no owner",noOwner?"warn":""],[noDue,"actions with no due date",noDue?"warn":""]
+  ].map(([n,l,c]) => `<div class="tile ${c}"><b>${n}</b><span>${l}</span></div>`).join("");
+  $("actions").innerHTML = acts.length ? acts.map(a => `<tr><td>${esc(a.text)}</td>
+    <td>${a.owner ? `<span class="pill">${esc(cap(a.owner))}</span>` : `<span class="pill missing">Needs owner</span>`}</td>
+    <td>${a.due ? `<span class="pill">${esc(a.due)}</span>` : `<span class="pill missing">Needs date</span>`}</td>
+    <td class="num">${Math.round(a.confidence*100)}%</td></tr>`).join("")
+    : `<tr><td colspan="4">No action items found. Try adding a task like “Maya to send the recap by Friday”.</td></tr>`;
+  $("cols").innerHTML = TYPES.map(([t,label,c]) => {
+    const items = res.filter(r => r.type === t);
+    return `<div class="col" style="--c:var(${c})"><h3><i style="background:var(${c})"></i>${label} (${items.length})</h3><ul>${
+      items.map(r => `<li>${esc(r.text)}<span class="conf">${Math.round(r.confidence*100)}%</span></li>`).join("") || "<li>None</li>"}</ul></div>`;
+  }).join("");
+}
+function go(){
+  const t0 = performance.now();
+  const res = B2A.run($("notes").value.split("\n"));
+  render(res);
+  $("status").textContent = `Sorted ${res.length} notes in ${Math.max(1, Math.round(performance.now()-t0))} ms`;
+}
+$("sample").innerHTML = SAMPLES.map((s,i) => `<option value="${i}">${esc(s.title)}</option>`).join("");
+$("sample").addEventListener("change", e => { $("notes").value = SAMPLES[e.target.value].notes.join("\n"); go(); });
+$("go").addEventListener("click", go);
+$("copy").addEventListener("click", async () => {
+  const md = last.filter(r => r.type==="action").map(a => `- [ ] ${a.text} (owner: ${a.owner ? cap(a.owner) : "NEEDS OWNER"}, due: ${a.due || "NEEDS DATE"})`).join("\n");
+  try { await navigator.clipboard.writeText(md); $("status").textContent = "Action list copied as a Markdown checklist"; }
+  catch(e){ $("status").textContent = "Copy was blocked by the browser. Select the table and copy it instead."; }
+});
+B2A.load(JSON.parse($("model").textContent));
+$("notes").value = SAMPLES[0].notes.join("\n"); go();
+</script>
+</body>
+</html>
