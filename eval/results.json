@@ -1,0 +1,83 @@
+{
+ "notes": 124,
+ "boards": 8,
+ "type_accuracy": 0.6774193548387096,
+ "type_macro_f1": 0.6641832209464795,
+ "baseline_type_accuracy": 0.5403225806451613,
+ "baseline_type_macro_f1": 0.5146792347400351,
+ "per_type": {
+  "action": {
+   "precision": 0.806,
+   "recall": 0.893,
+   "f1": 0.847,
+   "n": 28
+  },
+  "decision": {
+   "precision": 0.5,
+   "recall": 0.412,
+   "f1": 0.452,
+   "n": 17
+  },
+  "idea": {
+   "precision": 0.5,
+   "recall": 0.4,
+   "f1": 0.444,
+   "n": 30
+  },
+  "problem": {
+   "precision": 0.594,
+   "recall": 0.704,
+   "f1": 0.644,
+   "n": 27
+  },
+  "question": {
+   "precision": 0.913,
+   "recall": 0.955,
+   "f1": 0.933,
+   "n": 22
+  }
+ },
+ "baseline_action_recall": 0.35714285714285715,
+ "baseline_action_precision": 1.0,
+ "action_items": 28,
+ "owner_accuracy": 1.0,
+ "due_accuracy": 1.0,
+ "owner_and_due_both_correct_end_to_end": 0.8928571428571429,
+ "board_ms": 5.284547805786133,
+ "theme_ari_mean": 0.022639900525456717,
+ "themes_gold_vs_found": [
+  [
+   3,
+   4
+  ],
+  [
+   3,
+   2
+  ],
+  [
+   3,
+   2
+  ],
+  [
+   3,
+   5
+  ],
+  [
+   3,
+   3
+  ],
+  [
+   3,
+   1
+  ],
+  [
+   3,
+   3
+  ],
+  [
+   3,
+   2
+  ]
+ ],
+ "theme_ari_baseline_one_group": 0.0
+}
